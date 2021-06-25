@@ -1,0 +1,113 @@
+#page-room{
+    header{
+        padding: 24px;
+        border-bottom: 1px solid var(--white-light);
+
+        .content{
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >img{
+                max-height: 45px;
+            }
+
+            >div{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                
+                button {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+        
+        .room-title {
+            margin: 32px 0 24px;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                color: var(--grey-dark);
+            }
+
+            span {
+                margin-left: 1rem;
+                background: var(--pink);
+                border-radius: 50px;
+                padding: 8px 16px;
+                color: var(--white);
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+        }
+
+        form {
+            textarea {
+                width: 100%;
+                border: 0;
+                padding: 16px;
+                border-radius: 8px;
+                background: var(--white-soft);
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+                resize: vertical;
+                min-height: 130px
+            }
+
+            .form-footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem;
+
+
+                .user-info{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        border-radius: 50%;
+                    }
+                    span {
+                        margin-left: 0.5rem;
+                        color: var(--grey-dark);
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                    }
+                }
+
+                > span{
+                    font-size: 0.9rem;
+                    color: var(--grey);
+                    font-weight: 500;
+
+                    button {
+                        background: transparent;
+                        border: 0;
+                        color: var(--purple);
+                        text-decoration: underline;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.questions-list{
+    margin-top: 2rem;
+}

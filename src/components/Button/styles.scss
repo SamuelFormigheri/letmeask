@@ -1,0 +1,36 @@
+.button{
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: var(--purple);
+    color: var(--white);
+    padding: 0 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: 200ms ease;
+    
+    img{
+        margin-right: 8px;
+    }
+
+    &:not(:disabled):hover{
+        filter: brightness(0.9);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &.outlined{
+       background: transparent;
+       border: 1px solid var(--purple);
+       color: var(--purple); 
+    }
+}

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--white-soft);
+    color: var(--grey-dark);
+}
+
+body, input, button, textarea{
+    font: 400 1rem 'Roboto', sans-serif;
+} 
+
+@media(max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 720px){
+    html{
+        font-size: 87.5%;
+    }
+}
+
+@media(max-width: 600px){
+    html{
+        font-size: 85%;
+    }
+}
+
+:root{
+    --white: #FFF;
+    --white-light: #e2e2e2;
+    --white-soft: #f8f8f8;
+    --grey-dark: #29292e; 
+    --grey: #737380;
+    --grey-light: #a8a8b3;
+    --purple: #835afd;
+    --pink: #e559f9;
+    --red: #ea4335;
+}

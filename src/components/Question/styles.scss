@@ -1,0 +1,80 @@
+.question{
+    background: var(--white-soft);
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+
+    & + .question {
+        margin-top: 0.5rem;
+    }
+
+    
+    &.highlighted{
+        background: var(--white-light);
+        border: 1px solid var(--purple);
+    }
+    
+    &.answered{
+        background: var(--grey-light);
+    }
+
+    p{
+        color: var(--grey-dark);
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+
+        .user-info{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+            }
+            span {
+                margin-left: 0.5rem;
+                color: var(--grey);
+                font-size: 0.9rem;
+            }
+        }
+
+        > div{
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        button{
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+
+            &.like-button{
+                display: flex;
+                align-items: flex-end;
+                color: var(--grey);
+
+                svg{
+                    gap: 0.5rem;
+                }
+
+                &.liked{
+                    color: var(--purple);
+
+                    svg path{
+                        stroke: var(--purple);
+                    }
+                }
+
+                &:hover{
+                    filter: brightness(0.6);
+                }
+            }
+        }
+    }
+}
